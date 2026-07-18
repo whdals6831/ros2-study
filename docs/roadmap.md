@@ -9,6 +9,7 @@
 완료 기준:
 
 - Workspace를 만들고 `colcon build`로 빌드할 수 있다.
+- `colcon test`, `ros2 doctor`, ROS2 CLI로 기본 상태를 확인할 수 있다.
 - C++ 또는 Python Package를 직접 만들 수 있다.
 - Node, Parameter, Logging, Launch의 기본 사용법을 설명할 수 있다.
 
@@ -52,8 +53,19 @@
    - Python Launch
    - Launch Argument
    - Node 실행
+   - Namespace
+   - Remapping
+   - Parameter YAML 적용
+   - 여러 Node 동시 실행
    - Launch File 포함
    - 조건부 실행
+8. Development Checks
+   - `ros2 doctor`
+   - `ros2 node list/info`
+   - `ros2 topic list/info/echo/hz`
+   - `rqt_graph`
+   - `colcon test`
+   - Lint 실행
 
 ## Phase 2. Communication
 
@@ -71,26 +83,29 @@
    - Publisher
    - Subscriber
    - Topic CLI
-   - Publish Frequency
-   - Multiple Publisher와 Subscriber
 2. Message
    - Standard Message
    - Custom Message
    - Message Interface Package
    - Message 의존성
-3. Service
+3. Topic Advanced
+   - Publish Frequency
+   - Multiple Publisher와 Subscriber
+   - Custom Message Topic
+   - Topic Remapping
+4. Service
    - Service Server
    - Service Client
    - Custom Service
    - 비동기 요청
-4. Action
+5. Action
    - Action Server
    - Action Client
    - Goal
    - Feedback
    - Result
    - Cancel
-5. QoS
+6. QoS
    - Reliability
    - Durability
    - History
