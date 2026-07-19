@@ -1,0 +1,4 @@
+parameter_node:
+  ros__parameters:
+    robot_name: rover
+    max_speed: 2.0

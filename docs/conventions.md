@@ -208,6 +208,7 @@ Chapter README는 필요한 항목만 포함한다.
 - 각 ROS2 Package는 독립적으로 빌드 가능해야 한다.
 - Package 이름은 저장소 안에서 중복하지 않는다.
 - 의존성은 `package.xml`에 명시한다.
+- 예제 Package에는 copyright linter(`ament_copyright`, `test_copyright.py`)를 적용하지 않는다.
 - C++ 실행 파일과 라이브러리는 `CMakeLists.txt`에서 install한다.
 - Python entry point는 `setup.py`에 명시한다.
 - Launch, config, rviz, urdf 파일은 패키지 install 대상에 포함한다.
