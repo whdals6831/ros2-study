@@ -114,10 +114,22 @@ colcon build
 which ros2
 ros2 doctor
 printenv ROS_DISTRO
+printenv ROS_DOMAIN_ID
+printenv RMW_IMPLEMENTATION
 printenv AMENT_PREFIX_PATH
 ```
 
 `source install/setup.*`를 하지 않으면 방금 빌드한 패키지를 `ros2 run` 또는 `ros2 launch`에서 찾지 못한다.
+
+`ros2 node list`, `ros2 topic list` 같은 graph 명령이 비어 있는데 `--no-daemon`을 붙이면 출력된다면 ROS2 CLI daemon 상태가 오래되었을 수 있다.
+
+```bash
+ros2 daemon stop
+ros2 daemon start
+ros2 node list
+```
+
+계속 다르게 보이면 Node를 실행한 터미널과 CLI를 실행한 터미널의 `ROS_DOMAIN_ID`, `RMW_IMPLEMENTATION`, workspace source 상태가 같은지 확인한다.
 
 ## Git Ignore Policy
 
